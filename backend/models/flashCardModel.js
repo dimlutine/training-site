@@ -9,7 +9,7 @@ const flashCardSchema = mongoose.Schema(
     question: {
       type: String,
       required: [true, 'Enter a question'],
-      unique: true,
+      unique: false,
     },
     answer: {
       type: String,

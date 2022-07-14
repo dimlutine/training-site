@@ -15,9 +15,10 @@ const registerFlashCard = asyncHandler(async (req, res) => {
   }
 
   //Find if card already exists
-  const cardExists = await FlashCard.findOne({ question });
+  const questionExists = await FlashCard.findOne({ question });
+  const categoryExists = await FlashCard.findOne({ category });
 
-  if (cardExists) {
+  if (questionExists && categoryExists) {
     res.status(400);
     throw new Error('Flashcard already exists');
   }
