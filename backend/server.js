@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
 
 //routes
 app.use('/api/users', require('./routes/userRoutes'));
+app.use('/api/flashcards', require('./routes/flashCardRoutes'));
 
 app.use(errorHandler);
 
