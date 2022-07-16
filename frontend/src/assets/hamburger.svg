@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="100" viewBox="0 0 170 100">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M30,20H140a5,5,0,0,1,0,10H30A5,5,0,0,1,30,20Z"/>
+  <path class="cls-1" d="M30,45H140a5,5,0,0,1,0,10H30A5,5,0,0,1,30,45Z"/>
+  <path class="cls-1" d="M30,70H140a5,5,0,0,1,0,10H30A5,5,0,0,1,30,70Z"/>
+</svg>

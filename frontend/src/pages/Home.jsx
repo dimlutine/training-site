@@ -8,8 +8,8 @@ function Home() {
   //   });
 
   const subjects = [
-    { key: 1, text: 'python', pretty: 'Python' },
-    { key: 2, text: 'javascript', pretty: 'JavaScript' },
+    { key: 1, to: 'python', name: 'Python' },
+    { key: 2, to: 'javascript', name: 'JavaScript' },
   ];
 
   const onChange = (e) => {
@@ -28,8 +28,8 @@ function Home() {
           <select name='select' onChange={onChange}>
             <option value='/'>Select a subject</option>
             {subjects.map((subject) => (
-              <option key={subject.key} value={subject.text}>
-                {subject.pretty}
+              <option key={subject.key} value={subject.to}>
+                {subject.name}
               </option>
             ))}
           </select>

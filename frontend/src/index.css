@@ -377,6 +377,102 @@ footer {
   animation: spin 1.2s linear infinite;
 }
 
+.hamburger {
+  width: 6em;
+  height: 4em;
+  padding-left: .5em;
+  padding-top: .2em;
+  border-radius: 10px
+}
+
+.modalList {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.025);
+  text-align: center;
+  border: solid;
+  border-radius: 10px;
+  border-color:rgb(31, 31, 31);
+  margin-bottom: .25em;
+  background-color: rgb(245, 245, 245);
+}
+
+#navbutton.btn:hover{
+  background-color: rgb(248, 248, 248);
+  border: solid;
+  border-color:rgb(5, 5, 5);
+  border-width: 3px;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.dropbtn {
+  background-color: #7c7c82;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  width: 6em;
+  height: 4em;
+}
+
+/* .dropdown {
+  top: .5em;
+  position: absolute;
+  display: inline-block;
+  border-radius: 10px;
+  border-color: red;
+} */
+/* 
+.dropdown {
+  top: .5em;
+  position: absolute;
+  display: inline-block;
+  border-radius: 10px;
+  border-color: red;
+}
+
+.dropdown-content {
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  color: white;
+  background-color: #7c7c82;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  color: white;
+  border-radius: 10px;
+}
+
+.dropdown-content a:hover {background-color: #1d1d1d; border-radius: 10px; padding-left: .5em}
+
+.dropdown:hover .dropdown-content {display: block;}
+ 
+.dropdown:hover .dropbtn {background-color: #3f3f3f}
+*/
+/* .hideit {
+  opacity: 0;
+}  */
+
+.dropdown:hover .dropbtn {
+  background-color: #3f3f3f;
+  transition: opacity 500ms ease-in-out;
+  
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
