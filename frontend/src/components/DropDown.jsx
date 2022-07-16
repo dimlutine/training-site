@@ -8,7 +8,7 @@ const customStyles = {
   content: {
     // width: '600px',
     boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.2)',
-    width: '30%',
+    width: '40%',
     top: '50%',
     left: '50%',
     right: 'auto',
@@ -21,6 +21,7 @@ const customStyles = {
     border: 'solid',
     borderColor: 'rgb(10, 10, 10)',
     backgroundColor: 'rgb(250, 250, 250)',
+    overlay: { zIndex: 999 },
   },
 };
 
@@ -45,13 +46,13 @@ const links = [
 ];
 
 function DropDown() {
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const toggleHover = () => {
-    setHover(!hover);
-    console.log(hover);
-  };
+  // const toggleHover = () => {
+  //   setHover(!hover);
+  //   console.log(hover);
+  // };
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -72,10 +73,8 @@ function DropDown() {
         <div className='dropdown'>
           <ul>
             {links.map((link) => (
-              <li className='modalList'>
-                <Link key={link.key} to={link.to}>
-                  {link.name}
-                </Link>
+              <li key={link.key} className='modalList'>
+                <Link to={link.to}>{link.name}</Link>
               </li>
             ))}
           </ul>
@@ -86,7 +85,8 @@ function DropDown() {
         className='dropdown btn dropbtn'
         onClick={openModal}
       >
-        <Hamburger toggled={modalIsOpen} />
+        {!modalIsOpen ? <Hamburger toggled={modalIsOpen} /> : <Ecks />}
+        {/* <Hamburger toggled={modalIsOpen} /> */}
       </button>
     </nav>
   );
