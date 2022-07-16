@@ -385,6 +385,15 @@ footer {
   border-radius: 10px
 }
 
+.ecks {
+  width: 6em;
+  height: 4em;
+  padding-left: .5em;
+  padding-top: .2em;
+  border-radius: 10px;
+  z-index: 10000 !important;
+}
+
 .modalList {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.025);
   text-align: center;
@@ -472,6 +481,14 @@ footer {
   transition: opacity 500ms ease-in-out;
   
 }
+
+.modalList:hover {
+  color: white;
+  background-color: #a4a4a4;
+  transition: opacity 500ms ease-in-out;
+  
+}
+
 
 @keyframes spin {
   0% {
