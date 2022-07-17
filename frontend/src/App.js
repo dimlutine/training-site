@@ -13,6 +13,7 @@ import CyberSec from './pages/CyberSec';
 import DevOps from './pages/DevOps';
 import Hardware from './pages/Hardware';
 import Software from './pages/Software';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path='/python' element={<Python />} />
             <Route path='/javascript' element={<JavaScript />} />
           </Routes>
+          <Footer />
         </div>
       </Router>
       <ToastContainer />
