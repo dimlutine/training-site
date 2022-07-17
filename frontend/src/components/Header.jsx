@@ -1,5 +1,5 @@
 import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa';
-import { ReactComponent as Logo } from '../assets/logo.svg';
+// import { ReactComponent as Logo } from '../assets/logo.svg';
 import mainLogo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import DropDown from './DropDown';
@@ -13,7 +13,11 @@ function Header() {
           {/* <h1>
             <Logo id='logo' />
           </h1> */}
-          <img src={mainLogo} alt='' style={{ width: '15rem' }} />
+          <img
+            src={mainLogo}
+            alt=''
+            style={{ marginTop: '.4rem', width: '12rem' }}
+          />
         </Link>
       </div>
       <ul>
