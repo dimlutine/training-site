@@ -396,20 +396,18 @@ footer {
 }
 
 .hamburger {
-  width: 4em;
-  height: 2em;
+  transform: scale(.25);
   padding-left: .5em;
   padding-top: .2em;
   border-radius: 10px
 }
 
 .ecks {
-  width: 4em;
-  height: 2em;
+  transform: scale(.25);
   padding-left: .5em;
   padding-top: .2em;
   border-radius: 10px;
-  z-index: 10000 !important;
+
 }
 
 .modalList {
@@ -439,9 +437,10 @@ footer {
 }
 
 .dropbtn {
+  top: 10px;
   background-color: #ffffff;
-  padding: 5px;
-  font-size: 16px;
+  /* padding: 5px; */
+  /* font-size: 16px; */
   border: none;
   border-radius: 10px;
   width: 4em;
@@ -468,6 +467,11 @@ footer {
   
 }
 
+#logo{
+  width: 40vw;
+  margin-top: 1.5rem;
+  
+}
 
 @keyframes spin {
   0% {

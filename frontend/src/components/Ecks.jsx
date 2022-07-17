@@ -2,8 +2,8 @@ import { ReactComponent as NavEcks } from '../assets/ecks.svg';
 
 function Ecks() {
   return (
-    <div>
-      <NavEcks className='ecks' />
+    <div className='ecks'>
+      <NavEcks />
     </div>
   );
 }
