@@ -34,14 +34,34 @@ const links = [
     key: 1,
   },
   {
-    to: '/python',
-    name: 'Python',
+    to: '/webdev',
+    name: 'Web Development',
     key: 2,
   },
   {
-    to: '/javascript',
-    name: 'JavaScript',
+    to: '/appdev',
+    name: 'App Development',
     key: 3,
+  },
+  {
+    to: '/cybersec',
+    name: 'Cyber Security',
+    key: 4,
+  },
+  {
+    to: '/devops',
+    name: 'DevOps',
+    key: 5,
+  },
+  {
+    to: '/hardware',
+    name: 'Hardware Support',
+    key: 6,
+  },
+  {
+    to: '/software',
+    name: 'Software Support',
+    key: 7,
   },
 ];
 
@@ -73,8 +93,10 @@ function DropDown() {
         <div className='dropdown'>
           <ul>
             {links.map((link) => (
-              <li key={link.key} className='modalList'>
-                <Link to={link.to}>{link.name}</Link>
+              <li key={link.key}>
+                <Link className='modalList' onClick={closeModal} to={link.to}>
+                  {link.name}
+                </Link>
               </li>
             ))}
           </ul>

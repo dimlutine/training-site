@@ -8,13 +8,46 @@ function Home() {
   //   });
 
   const subjects = [
-    { key: 1, to: 'python', name: 'Python' },
-    { key: 2, to: 'javascript', name: 'JavaScript' },
+    // {
+    //   to: '/',
+    //   name: 'Home',
+    //   key: 1,
+    // },
+    {
+      to: '/webdev',
+      name: 'Web Development',
+      key: 2,
+    },
+    {
+      to: '/appdev',
+      name: 'App Development',
+      key: 3,
+    },
+    {
+      to: '/cybersec',
+      name: 'Cyber Security',
+      key: 4,
+    },
+    {
+      to: '/devops',
+      name: 'DevOps',
+      key: 5,
+    },
+    {
+      to: '/hardware',
+      name: 'Hardware Support',
+      key: 6,
+    },
+    {
+      to: '/software',
+      name: 'Software Support',
+      key: 7,
+    },
   ];
 
   const onChange = (e) => {
     console.log(e.target.value);
-    navigate(`/${e.target.value}`);
+    navigate(`${e.target.value}`);
   };
 
   return (
