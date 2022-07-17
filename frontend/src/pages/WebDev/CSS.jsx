@@ -1,7 +1,7 @@
-import { useNavigate, Link } from 'react-router-dom';
-import BackButton from '../components/BackButton';
+import BackButton from '../../components/BackButton';
+import { Link } from 'react-router-dom';
 
-function WebDev() {
+function CSS() {
   const content = [
     // {
     //   to: '/',
@@ -9,49 +9,44 @@ function WebDev() {
     //   key: 1,
     // },
     {
-      to: '/html',
-      name: 'HTML',
+      to: '/docs',
+      name: 'Documents',
       key: 2,
     },
     {
-      to: '/css',
-      name: 'CSS',
+      to: '/flashcards',
+      name: 'Flash Cards',
       key: 3,
     },
     {
-      to: '/javascript',
-      name: 'JavaScript',
+      to: '/videos',
+      name: 'Videos',
       key: 4,
     },
     {
-      to: '/python',
-      name: 'Python',
+      to: '/glossary',
+      name: 'Glossary',
       key: 5,
     },
     {
-      to: '/php',
-      name: 'PHP',
+      to: '/community',
+      name: 'Community',
       key: 6,
     },
     {
-      to: '/ruby',
-      name: 'Ruby',
+      to: '/links',
+      name: 'Links',
       key: 7,
-    },
-    {
-      to: '/swift',
-      name: 'Swift',
-      key: 8,
     },
   ];
   return (
     <>
       <div>
-        <BackButton url='/' />
+        <BackButton url='/webdev' />
       </div>
       <section className='heading'>
-        <h1>Web Development</h1>
-        <p>Please choose a subject below to get started</p>
+        <h1>CSS</h1>
+        <p>How would you like to learn?</p>
       </section>
       <main>
         {content.map((subject) => (
@@ -65,4 +60,4 @@ function WebDev() {
     </>
   );
 }
-export default WebDev;
+export default CSS;

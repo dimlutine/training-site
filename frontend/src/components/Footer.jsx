@@ -7,7 +7,9 @@ function Footer() {
         className='footer-container'
         style={{ align: 'center', fontSize: '.7em' }}
       >
-        <div style={{ width: '10em' }}>Contact Us</div>
+        <div style={{ width: '10em' }}>
+          <a href='mailto:webmaster@dayafteryester.day'>Contact Us</a>
+        </div>
         <div>
           <p>&copy; Copyright 2022 dayafteryester.day</p>
         </div>
